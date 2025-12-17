@@ -1,3 +1,4 @@
+import Spline from '@splinetool/react-spline';
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Github, Linkedin, Mail } from 'lucide-react';
@@ -5,9 +6,13 @@ import { Github, Linkedin, Mail } from 'lucide-react';
 const Hero = () => {
     return (
         <section className="min-h-[80vh] flex flex-col justify-center items-center text-center relative overflow-hidden">
-            {/* Background Decorative Elements */}
-            <div className="absolute top-1/4 -left-20 w-72 h-72 bg-blue-500/20 rounded-full blur-3xl" />
-            <div className="absolute bottom-1/4 -right-20 w-80 h-80 bg-indigo-500/20 rounded-full blur-3xl" />
+            {/* 3D Spline Scene Background */}
+            <div className="absolute inset-0 z-0">
+                <Spline scene="https://prod.spline.design/6Wq1Q7YGyM-iab9i/scene.splinecode" />
+            </div>
+
+            {/* Overlay to ensure text readability if needed */}
+            <div className="absolute inset-0 bg-slate-950/60 z-0 pointer-events-none" />
 
             <motion.div
                 initial={{ opacity: 0, y: 30 }}
