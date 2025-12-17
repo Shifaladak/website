@@ -29,9 +29,9 @@ const Hero = () => {
                 </p>
 
                 <div className="flex gap-4 justify-center">
-                    <SocialLink href="#" icon={<Github size={20} />} label="GitHub" />
-                    <SocialLink href="#" icon={<Linkedin size={20} />} label="LinkedIn" />
-                    <SocialLink href="#" icon={<Mail size={20} />} label="Email" />
+                    <SocialLink href="https://github.com/Shifaladak" icon={<Github size={20} />} label="GitHub" />
+                    <SocialLink href="https://www.linkedin.com/in/shifa-ladak/" icon={<Linkedin size={20} />} label="LinkedIn" />
+                    <SocialLink href="mailto:shl8628@nyu.edu" icon={<Mail size={20} />} label="Email" />
                 </div>
             </motion.div>
         </section>
